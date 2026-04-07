@@ -65,7 +65,7 @@ export const BingXFeatures = () => {
             className="space-y-12"
           >
             <div className="relative inline-block border-l-4 border-[#00e5ff] pl-6 py-2">
-               <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter uppercase font-heading text-white leading-none">
+               <h2 className="text-3xl md:text-6xl font-black italic tracking-tighter uppercase font-heading text-white leading-tight">
                  El Gigante <br />
                  <span className="text-secondary">detrás del Éxito</span>
                </h2>

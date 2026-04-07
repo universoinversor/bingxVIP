@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 glass-effect border-b border-white/5">
-      <div className="absolute inset-0 scanline opacity-20" />
-      <div className="container mx-auto px-3 sm:px-6 h-14 sm:h-20 flex items-center justify-between relative">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-xl border-b border-white/10">
+      <div className="absolute inset-0 scanline opacity-10 pointer-events-none" />
+      <div className="container mx-auto px-4 sm:px-6 h-14 sm:h-20 flex items-center justify-between relative">
         
         {/* HUD LOGO AREA */}
         <div className="relative p-1 sm:p-2 flex items-center gap-1.5 sm:gap-3">
