@@ -11,26 +11,26 @@ const BTCParticles = () => {
   
   useEffect(() => {
     // Generate random particles
-    const p = Array.from({ length: 15 }).map((_, i) => ({
+    const p = Array.from({ length: 25 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 20 + 10,
-      duration: Math.random() * 10 + 10,
-      delay: Math.random() * 5
+      size: Math.random() * 30 + 15,
+      duration: Math.random() * 8 + 6,
+      delay: Math.random() * 4
     }));
     setParticles(p);
   }, []);
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none z-10 opacity-30">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-20">
       {particles.map((p) => (
         <motion.div
           key={p.id}
           initial={{ y: "110%", x: `${p.x}%`, opacity: 0 }}
           animate={{ 
             y: "-10%",
-            opacity: [0, 1, 1, 0],
+            opacity: [0, 0.7, 0.7, 0],
             rotate: [0, 360]
           }}
           transition={{ 
@@ -39,7 +39,7 @@ const BTCParticles = () => {
             delay: p.delay,
             ease: "linear" 
           }}
-          className="absolute text-[#f7931a]"
+          className="absolute text-[#f7931a] drop-shadow-[0_0_10px_rgba(247,147,26,0.4)]"
           style={{ width: p.size, height: p.size }}
         >
            <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
@@ -92,9 +92,9 @@ export const Hero = () => {
       <motion.div 
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ 
-          opacity: [0.15, 0.25, 0.15],
+          opacity: [0.3, 0.5, 0.3],
           scale: 1,
-          y: [0, -10, 0]
+          y: [0, -15, 0]
         }}
         transition={{ 
           duration: 4, 
@@ -109,17 +109,17 @@ export const Hero = () => {
              alt="Edwin Muñoz Hologram" 
              fill 
              priority
-             className="object-contain object-center lg:object-right-bottom mix-blend-screen opacity-40 grayscale-[1] brightness-[1.5] contrast-[1.2]"
+             className="object-contain object-center lg:object-right-bottom mix-blend-screen opacity-60 grayscale-[1] brightness-[1.8] contrast-[1.4]"
              style={{ 
-               filter: "drop-shadow(0 0 20px rgba(0, 229, 255, 0.3)) hue-rotate(160deg)" 
+               filter: "drop-shadow(0 0 30px #00e5ff) hue-rotate(160deg)" 
              }}
            />
            {/* Scanlines overlay for the hologram */}
-           <div className="absolute inset-0 bg-scanlines opacity-20" />
+           <div className="absolute inset-0 bg-scanlines opacity-40" />
            <motion.div 
-              animate={{ opacity: [0.3, 0.6, 0.3] }}
-              transition={{ duration: 0.2, repeat: Infinity }}
-              className="absolute inset-0 bg-[#00e5ff]/5 pointer-events-none" 
+              animate={{ opacity: [0.4, 0.7, 0.4] }}
+              transition={{ duration: 0.15, repeat: Infinity }}
+              className="absolute inset-0 bg-[#00e5ff]/10 pointer-events-none" 
            />
         </div>
       </motion.div>

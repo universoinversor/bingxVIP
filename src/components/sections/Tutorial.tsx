@@ -16,8 +16,8 @@ const steps = [
     num: "02",
     title: "FONDEO ESTRATÉGICO",
     desc: "Deposita mediante P2P, tarjeta o transferencia cripto. Mínimo recomendado: $100 USD.",
-    cta: "SOPORTE DEPÓSITO",
-    link: "https://chat.whatsapp.com/FL9Dfop2qcZ7n4f72sPhcK",
+    cta: "SOLICITAR GUÍA DE FONDEO",
+    link: "https://wa.me/573183002448?text=HOLA%20EDWIN%2C%20YA%20ME%20REGISTR%C3%89%20EN%20BINGX.%20%F0%9F%9A%80%20%C2%A1QUIERO%20LOS%20PASOS%20ELITE%20PARA%20REALIZAR%20MI%20FONDEO%20Y%20EMPEZAR%20A%20GANAR!",
     icon: CreditCard
   },
   {
