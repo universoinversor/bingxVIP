@@ -60,7 +60,7 @@ export const Cockpit = () => {
               whileHover={{ scale: 1.05, filter: "brightness(1.1)" }}
               whileTap={{ scale: 0.95 }}
               href="https://wa.me/573183002448?text=EDWIN%20VENGO%20HACER%20MUCHO%20DINERO%20EN%20BINGX%20CONTIGO" 
-              className="group relative px-10 sm:px-16 py-5 sm:py-6 bg-white text-black font-black rounded-full text-lg sm:text-xl flex items-center gap-6 shadow-[0_20px_50px_rgba(255,255,255,0.15)] transition-all overflow-hidden"
+              className="group relative px-10 sm:px-16 py-5 sm:py-6 bg-white !text-black font-black rounded-full text-lg sm:text-xl flex items-center gap-6 shadow-[0_20px_50px_rgba(255,255,255,0.15)] transition-all overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               HABLAR CON EDWIN <MessageCircle className="w-7 h-7 fill-black" />

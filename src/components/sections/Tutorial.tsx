@@ -78,7 +78,7 @@ export const Tutorial = () => {
                 whileTap={{ scale: 0.95 }}
                 href={step.link}
                 target={step.link.startsWith("http") ? "_blank" : undefined}
-                className="block w-full py-4 px-6 bg-white text-black font-black uppercase tracking-widest text-[9px] sm:text-[10px] rounded-full border border-white shadow-[0_10px_30px_rgba(255,255,255,0.1)] group-hover:shadow-[0_10px_40px_rgba(255,255,255,0.2)] transition-all"
+                className="block w-full py-4 px-6 bg-white !text-black font-black uppercase tracking-widest text-[9px] sm:text-[10px] rounded-full border border-white shadow-[0_10px_30px_rgba(255,255,255,0.1)] group-hover:shadow-[0_10px_40px_rgba(255,255,255,0.2)] transition-all"
               >
                  {step.cta}
               </motion.a>

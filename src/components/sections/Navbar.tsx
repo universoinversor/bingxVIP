@@ -52,7 +52,7 @@ export const Navbar = () => {
             href="https://chat.whatsapp.com/FL9Dfop2qcZ7n4f72sPhcK"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-apple text-[8px] sm:text-[10px] px-3 sm:px-8 py-1.5 sm:py-2.5 uppercase tracking-widest font-black border border-white/10 relative overflow-hidden"
+            className="btn-apple !text-black text-[8px] sm:text-[10px] px-3 sm:px-8 py-1.5 sm:py-2.5 uppercase tracking-widest font-black border border-white/10 relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-1000" />
             Únete <span className="hidden xs:inline sm:inline">Ahora</span>
