@@ -36,18 +36,18 @@ const traders = [
 
 export const Elite = () => {
   return (
-    <section id="traders" className="py-32 relative bg-black">
+    <section id="traders" className="py-16 lg:py-32 relative bg-black">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-24">
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl font-bold tracking-tight text-white font-heading mb-8"
+            className="text-4xl md:text-7xl font-bold tracking-tight text-white font-heading mb-6 lg:mb-8"
           >
             Nuestros <span className="text-secondary">Estrategas Elite</span>
           </motion.h2>
-          <p className="text-secondary text-lg md:text-xl font-light leading-relaxed">
+          <p className="text-secondary text-base md:text-xl font-light leading-relaxed">
             Accede a las estrategias de los traders con mayor consistencia en el mercado institucional.
           </p>
         </div>

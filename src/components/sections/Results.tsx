@@ -12,22 +12,22 @@ const stats = [
 
 export const Results = () => {
   return (
-    <section id="results" className="py-20 lg:py-32 relative overflow-hidden bg-black">
+    <section id="results" className="py-16 lg:py-32 relative overflow-hidden bg-black">
       {/* HUD Background elements */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#00e5ff]/30 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#00e5ff]/30 to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-24">
+        <div className="text-center mb-16 lg:mb-24">
           <motion.h2 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-7xl font-black tracking-tighter uppercase font-heading text-white mb-6"
+            className="text-4xl md:text-7xl font-black tracking-tighter uppercase font-heading text-white mb-6 leading-tight"
           >
             Resultados que <span className="text-glow-blue underline decoration-[#00e5ff]/20">Hablan</span>
           </motion.h2>
-          <p className="text-secondary max-w-2xl mx-auto text-lg font-light tracking-wide italic">Transparencia absoluta en cada operación institucional.</p>
+          <p className="text-secondary max-w-2xl mx-auto text-base lg:text-lg font-light tracking-wide italic">Transparencia absoluta en cada operación institucional.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -82,7 +82,7 @@ export const Results = () => {
              </div>
           </div>
           
-          <div className="h-[300px] w-full flex items-end justify-between gap-4">
+          <div className="h-[200px] lg:h-[300px] w-full flex items-end justify-between gap-1.5 sm:gap-4">
              {[35, 55, 45, 85, 65, 95, 75, 100, 90, 80, 110, 130].map((h, i) => (
                <motion.div 
                  key={i}
@@ -90,7 +90,7 @@ export const Results = () => {
                  whileInView={{ height: `${h}%` }}
                  transition={{ delay: i * 0.05, duration: 1 }}
                  viewport={{ once: true }}
-                 className="flex-1 bg-gradient-to-t from-blue-600/20 via-blue-400/40 to-[#00e5ff] rounded-t relative group"
+                 className="flex-1 bg-gradient-to-t from-blue-600/20 via-blue-400/40 to-[#00e5ff] rounded-t relative group min-w-[4px]"
                >
                  <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 rounded text-[8px] font-black opacity-0 group-hover:opacity-100 transition-opacity">
                    +{h}%

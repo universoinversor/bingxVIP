@@ -47,15 +47,15 @@ export const Navbar = () => {
           </motion.a>
 
           <motion.a
-            whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(0, 229, 255, 0.3)" }}
+            whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(0, 229, 255, 0.4)" }}
             whileTap={{ scale: 0.95 }}
             href="https://chat.whatsapp.com/FL9Dfop2qcZ7n4f72sPhcK"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-apple !text-black text-[8px] sm:text-[10px] px-3 sm:px-8 py-1.5 sm:py-2.5 uppercase tracking-widest font-black border border-white/10 relative overflow-hidden"
+            className="bg-[#00e5ff] text-black text-[10px] sm:text-[11px] px-5 sm:px-8 py-2 sm:py-2.5 uppercase tracking-widest font-black rounded-full shadow-[0_0_15px_rgba(0,229,255,0.3)] relative overflow-hidden flex items-center justify-center min-w-[80px]"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-1000" />
-            Únete <span className="hidden xs:inline sm:inline">Ahora</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full hover:translate-x-full transition-transform duration-1000" />
+            <span className="relative z-10">ÚNETE</span>
           </motion.a>
         </div>
       </div>
